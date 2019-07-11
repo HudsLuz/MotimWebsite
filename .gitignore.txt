@@ -1,0 +1,12 @@
+#extenções:
+*.class
+*.pdf
+*[jw]ar
+
+#diretórios:
+dist/
+**/log/
+**/.idea/
+
+#arquivos
+.gitignore.txt
