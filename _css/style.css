@@ -42,9 +42,9 @@ img.figurehips{
 h1{
     margin-top: 8%;
     font-family: montbold, sans-serif;
-    font-size: 55px;
+    font-size: 56px;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
     color: #fff;
 }
 
@@ -161,12 +161,16 @@ h2{
 
 /* Responsividade */
 @media (min-width: 1300px) and (max-width: 1899px) {
+    img.figurehips{
+        width: 65%;
+    }
+
     h1{
         margin-top: 8%;
         font-family: montbold, sans-serif;
-        font-size: 48px;
+        font-size: 51px;
         text-transform: uppercase;
-        letter-spacing: 5px;
+        letter-spacing: 3px;
         color: #fff;
     }
 
@@ -176,16 +180,28 @@ h2{
         color: #DADADA;
     }
 
+    .container {
+        position: relative;
+        background-color: rgba(47, 27, 65, 0.7);
+        width: 90%;
+        text-align: center;
+        z-index: 1;
+        padding: 45px 20px;
+        border: none;
+        border-radius: 5px;
+        top: -80px;
+    }
+
     .col-3{
         -ms-flex: 0 0 30%;
         flex: 0 0 30%;
         max-width: 30%;
     }
 
-    .col-10 {
-        -ms-flex: 0 0 102.667%;
-        flex: 0 0 102.667%;
-        max-width: 102.667%;
+    .col-5 {
+        -ms-flex: 0 0 50.667%;
+        flex: 0 0 50.667%;
+        max-width: 50.667%;
     }
 
     .col-9 {
@@ -193,71 +209,97 @@ h2{
         flex: 0 0 90%;
         max-width: 90%;
     }
+
+    .col-10 {
+        -ms-flex: 0 0 102.667%;
+        flex: 0 0 102.667%;
+        max-width: 102.667%;
+    }
 }
 
 @media (min-width: 1200px) and (max-width: 1299px) {
-    .col-1 {
-        -ms-flex: 0 0 8.333333%;
-        flex: 0 0 8.333333%;
-        max-width: 8.333333%;
+    img.figurehips {
+        width: 58%;
     }
-    .col-2 {
-        -ms-flex: 0 0 16.666667%;
-        flex: 0 0 16.666667%;
-        max-width: 16.666667%;
+
+    h1{
+        margin-top: 8%;
+        font-family: montbold, sans-serif;
+        font-size: 47px;
+        text-transform: uppercase;
+        color: #fff;
     }
+
+    h2{
+        font-family: montregular, sans-serif;
+        font-size: 26px;
+        color: #DADADA;
+    }
+
+    .container {
+        position: relative;
+        background-color: rgba(47, 27, 65, 0.7);
+        width: 100%;
+        text-align: center;
+        z-index: 1;
+        padding: 40px 10px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .container h2 {
+        font-family: montbold, sans-serif;
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+
+    .container p {
+        font-family: montmedium, sans-serif;
+        font-size: 20px;
+        font-weight: bolder;
+        margin: 10px auto;
+    }
+
+    .button {
+        width: 100%;
+        height: 50px;
+        background-color: #F05941;
+        border: none;
+        border-radius: 5px;
+        margin: 8px 5px;
+        color: white;
+        font-family: montbold, sans-serif;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    .copy {
+        font-size: 10px;
+        color: #DADADA;
+        opacity: 0.4;
+    }
+
     .col-3 {
-        -ms-flex: 0 0 25%;
-        flex: 0 0 25%;
-        max-width: 25%;
+        -ms-flex: 0 0 32%;
+        flex: 0 0 32%;
+        max-width: 32%;
     }
-    .col-4 {
-        -ms-flex: 0 0 33.333333%;
-        flex: 0 0 33.333333%;
-        max-width: 33.333333%;
-    }
+
     .col-5 {
-        -ms-flex: 0 0 41.666667%;
-        flex: 0 0 41.666667%;
-        max-width: 41.666667%;
+        -ms-flex: 0 0 47.667%;
+        flex: 0 0 47.667%;
+        max-width: 47.667%;
     }
-    .col-6 {
-        -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-    .col-7 {
-        -ms-flex: 0 0 58.333333%;
-        flex: 0 0 58.333333%;
-        max-width: 58.333333%;
-    }
-    .col-8 {
-        -ms-flex: 0 0 66.666667%;
-        flex: 0 0 66.666667%;
-        max-width: 66.666667%;
-    }
+
     .col-9 {
-        -ms-flex: 0 0 75%;
-        flex: 0 0 75%;
-        max-width: 75%;
+        -ms-flex: 0 0 96%;
+        flex: 0 0 96%;
+        max-width: 96%;
     }
+
     .col-10 {
-        -ms-flex: 0 0 83.333333%;
-        flex: 0 0 83.333333%;
-        max-width: 83.333333%;
+        -ms-flex: 0 0 99.333%;
+        flex: 0 0 99.333%;
+        max-width: 99.333%;
     }
-    .col-11 {
-        -ms-flex: 0 0 91.666667%;
-        flex: 0 0 91.666667%;
-        max-width: 91.666667%;
-    }
-    .col-12 {
-        -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-}
-
-@media (max-width: 1199px) {
-
 }
