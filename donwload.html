@@ -3,67 +3,28 @@
     <head>
         <meta charset="UTF-8">
         <title>Motim - Como Jogar</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="_image/logomotimshut.png" />
-        <link rel="stylesheet" href="_css/bootstrap.min.css" />
+        <link rel="shortcut icon" href="_img/logomotimshut.png" />
         <link rel="stylesheet" href="_css/style.css" />
     </head>
     <body id="downinterface">
-        <div class="fixed-bottom">
-            <div class="row">
-                <div class="col-1">
-                    <div class="row fixed-bottom">
-                        <div class="col-1" style="margin-left: 3%">
-                            <a href="index.html">
-                                <button class="button_voltar">Voltar</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="central">
-                        <img src="_image/hipster.png" alt="hipster_motim" class="figurehips" />
-                    </div>
-                </div>
-                <div class="col-5">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <h2>Nosso servidor é feito na plataforma do Alt:V.</h2>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <p>Clique em "Download" para baixar o client.</p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="offset-4 col-4">
-                                        <a href="https://altv.mp/" target="_blank" >
-                                            <button class="button">Download</button>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <p>Após concluír o download, basta instalar e abrir.<br/>
-                                            Procure por "MotiM" na lista de servidores!</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-1">
-                    <div class="fixed-bottom">
-                        <div class="offset-10 col-2" style="text-align: right; margin-bottom: 30px">
-                            <p class="copy">Copyright © 2019 - Motim Network</p>
-                        </div>
-                    </div>
-                </div>
+        <section class="conteudo">
+            <img src="_img/hipster.png" alt="hipster_motim" id="hipster" />
+
+            <div id="paineldown">
+                <h2>Nosso servidor é feito na plataforma do Alt:V.</h2>
+                <p>Clique em "Download" para baixar o client.</p>
+                <a href="https://altv.mp/" target="_blank" >
+                    <button class="down_button">Download</button>
+                </a>
+                <p>Após concluír o download, basta instalar e abrir.<br/>
+                    Procure por "MotiM" na lista de servidores!</p>
             </div>
-        </div>
+        </section>
+        <footer class="rodape">
+            <a href="index.html">
+                <button class="button_voltar">Voltar</button>
+            </a>
+            <p id="copy_down">Copyright © 2019 - Motim Network</p>
+        </footer>
     </body>
 </html>

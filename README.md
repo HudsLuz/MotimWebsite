@@ -3,18 +3,18 @@
 
 <h1>Website do Servidor de Roleplay de GTA 5</h1>
 <h6>Desenvolvido por: Hudson Luz
-Designer por: Zonimi</h6>
+Design por: Zonimi</h6>
 <br/>
 <a href="www.motim.net">Motim Website</a>
 
-Linguagens e Frameworks: HTML, CSS, JS, Bootstrap 4 e Font Awesome.
+Linguagens e Frameworks: HTML, CSS.
 <br/>
 <br/>
 Paginas desenvolvidas:
 <ul>
     <li>Index</li>
     <li>Download</li>
-    <li>Login</li>
+    <li>Login</li> - Em desenvilvimento
 </ul>
 <br/>
 Contato:

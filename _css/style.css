@@ -18,81 +18,79 @@
     src: url("../_font/Montserrat-Regular.ttf");
 }
 
+
 /* Geral */
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     height: 100%;
     overflow-x: hidden;
+    overflow-y: hidden;
     font-family: montregular, sans-serif;
     color: #ffffff;
 }
 
-img.figureold{
-    width: 60%;
-}
-
-img.figurehips{
-    width: 55%;
-}
-
-h1{
-    margin-top: 8%;
-    font-family: montbold, sans-serif;
-    font-size: 56px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    color: #fff;
-}
-
-h2{
-    font-family: montregular, sans-serif;
-    font-size: 30px;
-    color: #DADADA;
-}
-
-#homeinterface{
-    background-image: url("../_image/background1.jpg");
-    background-attachment: fixed;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#downinterface{
-    background-image: url("../_image/background2.png");
+#homeinterface {
+    background-image: url("../_img/background1.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#logininterface{
-    background-image: url("../_image/background3.png");
+#downinterface {
+    background-image: url("../_img/background2.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.central{
-    text-align: center;
+#logininterface {
+    background-image: url("../_img/background3.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.button{
+
+/* Conteúdo */
+.conteudo {
+    position: absolute;
+    float: left;
     width: 100%;
-    height: 50px;
-    background-color: #F05941;
-    border: none;
+    bottom: -1%;
+}
+
+img#oldman {
+    margin: 12% auto 0 18%;
+    width: 25%;
+}
+img#hipster{
+    margin: 12% auto 0 18%;
+    width: 17%;
+}
+
+#painelhome {
+    position: relative;
+    width: 35%;
+    float: right;
+    margin: 15% 15% auto auto;
+}
+#paineldown {
+    position: relative;
+    float: right;
+    width: 33%;
     border-radius: 5px;
-    margin: 8px 5px;
-    color: white;
-    font-family: montbold, sans-serif;
-    font-size: 24px;
-    text-transform: uppercase;
+    background-color: rgba(47, 27, 65, 0.7);
+    z-index: 1;
+    text-align: center;
+    padding: 3% 2%;
+    margin: 7% 20% auto auto;
 }
 
 .button:hover {
@@ -102,17 +100,47 @@ h2{
     box-shadow: 0 0 1px 1px #fc5339;
 }
 
-.down{
-    letter-spacing: 4px;
+.button_down:hover {
+    background-color: #fc5339;
+    font-family: montbold, sans-serif;
+    color: #2F1B41;
+    box-shadow: 0 0 1px 1px #fc5339;
+}
+
+
+/* Rodapé */
+.rodape{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1%;
+}
+
+#copy {
+    font-size: 75%;
+    color: #DADADA;
+    opacity: 0.4;
+    margin-left: 1%;
+}
+
+#copy_down {
+    font-size: 75%;
+    color: #DADADA;
+    opacity: 0.4;
+    text-align: right;
+    margin-right: 2%;
 }
 
 .button_voltar{
-    width: 100%;
-    height: 32px;
+    position: relative;
+    float: left;
+    top: -15px;
+    left: 2%;
+    width: 105px;
+    height: 35px;
     background-color: #F05941;
     border: none;
     border-radius: 5px;
-    margin: 5px 5px 30px 5px;
     color: white;
     font-family: montbold, sans-serif;
     font-size: 17px;
@@ -126,143 +154,383 @@ h2{
     box-shadow: 0 0 1px 1px #fc5339;
 }
 
-.copy {
-    font-size: 10px;
-    color: #DADADA;
-    opacity: 0.4;
-    margin-left: 15px;
-}
-
-.container{
-    position: relative;
-    background-color: rgba(47, 27, 65, 0.7);
-    width: 90%;
-    text-align: center;
-    z-index: 1;
-    padding: 50px;
-    border: none;
-    border-radius: 5px;
-    top: -80px;
-}
-
-.container h2{
-    font-family: montbold, sans-serif;
-    font-size: 40px;
-    margin-bottom: 50px;
-}
-
-.container p{
-    font-family: montmedium, sans-serif;
-    font-size: 23px;
-    font-weight: bolder;
-    margin: 10px auto;
-}
-
 
 /* Responsividade */
-@media (min-width: 1300px) and (max-width: 1899px) {
-    img.figurehips{
-        width: 65%;
-    }
-
-    h1{
-        margin-top: 8%;
+@media screen and (min-width: 1870px) {/* (1920x1080) Full HD Display */
+    h1 {
+        position: relative;
         font-family: montbold, sans-serif;
-        font-size: 51px;
+        font-size: 60px;
         text-transform: uppercase;
-        letter-spacing: 3px;
+        letter-spacing: 4px;
         color: #fff;
     }
 
-    h2{
-        font-family: montregular, sans-serif;
-        font-size: 27px;
-        color: #DADADA;
-    }
-
-    .container {
+    h2 {
         position: relative;
-        background-color: rgba(47, 27, 65, 0.7);
-        width: 90%;
-        text-align: center;
-        z-index: 1;
-        padding: 45px 20px;
-        border: none;
-        border-radius: 5px;
-        top: -80px;
-    }
-
-    .col-3{
-        -ms-flex: 0 0 30%;
-        flex: 0 0 30%;
-        max-width: 30%;
-    }
-
-    .col-5 {
-        -ms-flex: 0 0 50.667%;
-        flex: 0 0 50.667%;
-        max-width: 50.667%;
-    }
-
-    .col-9 {
-        -ms-flex: 0 0 90%;
-        flex: 0 0 90%;
-        max-width: 90%;
-    }
-
-    .col-10 {
-        -ms-flex: 0 0 102.667%;
-        flex: 0 0 102.667%;
-        max-width: 102.667%;
-    }
-}
-
-@media (min-width: 1200px) and (max-width: 1299px) {
-    img.figurehips {
-        width: 58%;
-    }
-
-    h1{
-        margin-top: 8%;
-        font-family: montbold, sans-serif;
-        font-size: 47px;
-        text-transform: uppercase;
-        color: #fff;
-    }
-
-    h2{
         font-family: montregular, sans-serif;
-        font-size: 26px;
+        font-size: 200%;
         color: #DADADA;
-    }
-
-    .container {
-        position: relative;
-        background-color: rgba(47, 27, 65, 0.7);
-        width: 100%;
-        text-align: center;
-        z-index: 1;
-        padding: 40px 10px;
-        border: none;
-        border-radius: 5px;
-    }
-
-    .container h2 {
-        font-family: montbold, sans-serif;
-        font-size: 35px;
-        margin-bottom: 30px;
-    }
-
-    .container p {
-        font-family: montmedium, sans-serif;
-        font-size: 20px;
-        font-weight: bolder;
-        margin: 10px auto;
     }
 
     .button {
-        width: 100%;
+        width: 205px;
         height: 50px;
+        background-color: #F05941;
+        border: none;
+        border-radius: 5px;
+        margin: 8px 5px;
+        color: white;
+        font-family: montbold, sans-serif;
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+
+    .button_down {
+        width: 645px;
+        height: 50px;
+        background-color: #F05941;
+        border: none;
+        border-radius: 5px;
+        margin: 8px 5px;
+        color: white;
+        font-family: montbold, sans-serif;
+        font-size: 24px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+    }
+
+    #paineldown h2{
+        font-family: montbold, sans-serif;
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+
+    #paineldown p{
+        font-family: montmedium, sans-serif;
+        font-size: 23px;
+        font-weight: bolder;
+        margin: 20px auto;
+    }
+
+    .down_button {
+        width: 205px;
+        height: 50px;
+        background-color: #F05941;
+        border: none;
+        border-radius: 5px;
+        margin: 8px 5px;
+        color: white;
+        font-family: montbold, sans-serif;
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (min-width: 1648px) and (max-width: 1869px) {/* (1680x1050) WSXGA+ Display */
+    h1 {
+        position: relative;
+        font-family: montbold, sans-serif;
+        font-size: 53px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        color: #fff;
+    }
+
+    h2 {
+        position: relative;
+        font-family: montregular, sans-serif;
+        font-size: 29px;
+        color: #DADADA;
+    }
+
+    .button {
+        width: 179px;
+        height: 50px;
+        background-color: #F05941;
+        border: none;
+        border-radius: 5px;
+        margin: 8px 5px;
+        color: white;
+        font-family: montbold, sans-serif;
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+
+    .button_down {
+        width: 566px;
+        height: 50px;
+        background-color: #F05941;
+        border: none;
+        border-radius: 5px;
+        margin: 8px 5px;
+        color: white;
+        font-family: montbold, sans-serif;
+        font-size: 24px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+    }
+
+    #paineldown h2{
+        font-family: montbold, sans-serif;
+        font-size: 38px;
+        margin-bottom: 50px;
+    }
+
+    #paineldown p{
+        font-family: montmedium, sans-serif;
+        font-size: 20px;
+        font-weight: bolder;
+        margin: 20px auto;
+    }
+
+    .down_button {
+        width: 190px;
+        height: 50px;
+        background-color: #F05941;
+        border: none;
+        border-radius: 5px;
+        margin: 8px 5px;
+        color: white;
+        font-family: montbold, sans-serif;
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (min-width: 1568px) and (max-width: 1647px) {/* (1600x900) HD+ Display */
+    h1 {
+        position: relative;
+        font-family: montbold, sans-serif;
+        font-size: 50px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        color: #fff;
+    }
+
+    h2 {
+        position: relative;
+        font-family: montregular, sans-serif;
+        font-size: 27.4px;
+        color: #DADADA;
+    }
+
+    .button {
+        width: 170px;
+        height: 50px;
+        background-color: #F05941;
+        border: none;
+        border-radius: 5px;
+        margin: 8px 5px;
+        color: white;
+        font-family: montbold, sans-serif;
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+
+    .button_down {
+        width: 538px;
+        height: 50px;
+        background-color: #F05941;
+        border: none;
+        border-radius: 5px;
+        margin: 8px 5px;
+        color: white;
+        font-family: montbold, sans-serif;
+        font-size: 24px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+    }
+
+    #paineldown h2{
+        font-family: montbold, sans-serif;
+        font-size: 35px;
+        margin-bottom: 50px;
+    }
+
+    #paineldown p{
+        font-family: montmedium, sans-serif;
+        font-size: 20px;
+        font-weight: bolder;
+        margin: 20px auto;
+    }
+
+    .down_button {
+        width: 170px;
+        height: 45px;
+        background-color: #F05941;
+        border: none;
+        border-radius: 5px;
+        margin: 8px 5px;
+        color: white;
+        font-family: montbold, sans-serif;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (min-width: 1398px) and (max-width: 1567px) {/* (1440x900) WXGA+ Display */
+    h1 {
+        position: relative;
+        font-family: montbold, sans-serif;
+        font-size: 44px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        color: #fff;
+    }
+
+    h2 {
+        position: relative;
+        font-family: montregular, sans-serif;
+        font-size: 24.5px;
+        color: #DADADA;
+    }
+
+    .button {
+        width: 150px;
+        height: 50px;
+        background-color: #F05941;
+        border: none;
+        border-radius: 5px;
+        margin: 8px 5px;
+        color: white;
+        font-family: montbold, sans-serif;
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+
+    .button_down {
+        width: 478px;
+        height: 50px;
+        background-color: #F05941;
+        border: none;
+        border-radius: 5px;
+        margin: 8px 5px;
+        color: white;
+        font-family: montbold, sans-serif;
+        font-size: 24px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+    }
+
+    #paineldown h2{
+        font-family: montbold, sans-serif;
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+
+    #paineldown p{
+        font-family: montmedium, sans-serif;
+        font-size: 17px;
+        font-weight: bolder;
+        margin: 20px auto;
+    }
+
+    .down_button {
+        width: 150px;
+        height: 40px;
+        background-color: #F05941;
+        border: none;
+        border-radius: 5px;
+        margin: 8px 5px;
+        color: white;
+        font-family: montbold, sans-serif;
+        font-size: 17px;
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (min-width: 1320px) and (max-width: 1397px) {/* (1366x768) WXGA Display */
+    h1 {
+        position: relative;
+        font-family: montbold, sans-serif;
+        font-size: 41px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        color: #fff;
+    }
+
+    h2 {
+        position: relative;
+        font-family: montregular, sans-serif;
+        font-size: 23px;
+        color: #DADADA;
+    }
+
+    .button {
+        width: 141px;
+        height: 50px;
+        background-color: #F05941;
+        border: none;
+        border-radius: 5px;
+        margin: 8px 5px;
+        color: white;
+        font-family: montbold, sans-serif;
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+
+    .button_down {
+        width: 451px;
+        height: 50px;
+        background-color: #F05941;
+        border: none;
+        border-radius: 5px;
+        margin: 8px 5px;
+        color: white;
+        font-family: montbold, sans-serif;
+        font-size: 24px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    #paineldown h2{
+        font-family: montbold, sans-serif;
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+
+    #paineldown p{
+        font-family: montmedium, sans-serif;
+        font-size: 17px;
+        font-weight: bolder;
+        margin: 20px auto;
+    }
+
+    .down_button {
+        width: 150px;
+        height: 40px;
+        background-color: #F05941;
+        border: none;
+        border-radius: 5px;
+        margin: 8px 5px;
+        color: white;
+        font-family: montbold, sans-serif;
+        font-size: 17px;
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (min-width: 1234px) and (max-width: 1319px) {/* (1280x720) SXGA Display */
+    h1 {
+        position: relative;
+        font-family: montbold, sans-serif;
+        font-size: 38px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        color: #fff;
+    }
+
+    h2 {
+        position: relative;
+        font-family: montregular, sans-serif;
+        font-size: 21.4px;
+        color: #DADADA;
+    }
+
+    .button {
+        width: 131px;
+        height: 45px;
         background-color: #F05941;
         border: none;
         border-radius: 5px;
@@ -273,33 +541,42 @@ h2{
         text-transform: uppercase;
     }
 
-    .copy {
-        font-size: 10px;
-        color: #DADADA;
-        opacity: 0.4;
+    .button_down {
+        width: 421px;
+        height: 50px;
+        background-color: #F05941;
+        border: none;
+        border-radius: 5px;
+        margin: 8px 5px;
+        color: white;
+        font-family: montbold, sans-serif;
+        font-size: 24px;
+        text-transform: uppercase;
     }
 
-    .col-3 {
-        -ms-flex: 0 0 32%;
-        flex: 0 0 32%;
-        max-width: 32%;
+    #paineldown h2{
+        font-family: montbold, sans-serif;
+        font-size: 29px;
+        margin-bottom: 50px;
     }
 
-    .col-5 {
-        -ms-flex: 0 0 47.667%;
-        flex: 0 0 47.667%;
-        max-width: 47.667%;
+    #paineldown p{
+        font-family: montmedium, sans-serif;
+        font-size: 16px;
+        font-weight: bolder;
+        margin: 20px auto;
     }
 
-    .col-9 {
-        -ms-flex: 0 0 96%;
-        flex: 0 0 96%;
-        max-width: 96%;
-    }
-
-    .col-10 {
-        -ms-flex: 0 0 99.333%;
-        flex: 0 0 99.333%;
-        max-width: 99.333%;
+    .down_button {
+        width: 130px;
+        height: 40px;
+        background-color: #F05941;
+        border: none;
+        border-radius: 5px;
+        margin: 8px 5px;
+        color: white;
+        font-family: montbold, sans-serif;
+        font-size: 16px;
+        text-transform: uppercase;
     }
 }
