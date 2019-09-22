@@ -14,7 +14,7 @@ Paginas desenvolvidas:
 <ul>
     <li>Index</li>
     <li>Download</li>
-    <li>Login</li> - Em desenvilvimento
+    <li>Login</li> - Em desenvolvimento
 </ul>
 <br/>
 Contato:
